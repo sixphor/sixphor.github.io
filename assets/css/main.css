@@ -589,6 +589,7 @@ background-image: url("../../images/yellow-abstract.jpg"); */
 	text-align: center;
 	padding: 7.5em 0 2em 0;
 	cursor: default;
+	
 }
 
 .bg-blur {
@@ -1570,3 +1571,75 @@ body.homepage.is-preload #header:after {
     height: 100%;
     border-radius: 4px;
 }
+
+.faceimg {
+	width: 386px;
+	height: 290px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.logo {
+	width: 300px;
+	object-fit: contain;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating-logo {
+    animation: rotate 99s linear infinite;
+}
+
+/* @keyframes glowEffect {
+    0% {
+        filter: brightness(1) blur(0px);
+    }
+    50% {
+        filter: brightness(1.2) blur(5px);
+    }
+    100% {
+        filter: brightness(1) blur(0px);
+    }
+}
+
+.glowing-background {
+    background-image: url('assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: glowEffect 8s ease-in-out infinite;
+} */
+
+/* Apply fade-in effect to all sections in the about page */
+/* Zoom-in effect */
+.zoom-in {
+    transform: scale(0.8); /* Initially scaled down */
+    opacity: 0; /* Initially hidden */
+    animation: zoomIn 1s ease-in-out forwards; /* Animation with duration and easing */
+}
+
+/* Define the keyframe for the zoom-in effect */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8); /* Start small */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: scale(1); /* End at normal size */
+        opacity: 1; /* End visible */
+    }
+}
+
+.interests-font {
+	size: 16px;
+}
+
+
+
