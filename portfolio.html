@@ -7,7 +7,422 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="images/shurikenicon.ico" type="image/x-icon">
 </head>
-<body class="no-sidebar is-preload">
+
+<body class="no-sidebar is-preload" id="body">
+
+    <div id="overlay" onclick="off()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="off()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/8SxTT9PuMh8" loading="lazy"></iframe>
+            </div>
+      
+            <!-- Image 1 -->
+            <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+            <!-- Video 2 -->
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            <!-- Image 2 -->
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div>
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            Using Unity, I created my escape room game "Your Heart, Your Reality". In this game, the player must solve puzzles in order to escape the rooms and complete the game.
+             The game was created using the Unity engine, creating elements and objects and placing them in the scene to form an environment.
+              In this project, C# was used to create the game's features such as opening the doors, picking up objects, clicking buttons.
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay2" onclick="offOverlay2()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay2()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <div class="slideshow-container">
+                <div class="mySlides1 fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/web-app.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides1 fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="images/storyapp2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides1 fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/storyapp3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides1 fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/storyapp4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides1 fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/storyapp5.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+            <br>
+          </div>
+          <div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+          </div>
+          
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            Using a combination of Node.js, PHP and MySQL, I created a storybook app, "No Book, No Life".
+             This application allows people to create a user with a name, profile picture and description. 
+             It also allows the main part, creating books, with a title, author, book cover, and synopsis.
+              The book list and user list will be updated accordingly when one is created or deleted.
+             Throughout the creation of the app, I discovered how to implement multiple features and how to link to a local database, where all the book and user information are stored.
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay3" onclick="offOverlay3()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay3()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <iframe width="100%" height="315" src="https://youtube.com/embed/32STyDGg3xk" loading="lazy"></iframe>
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            This app is designed to help users manage their personal book collections. 
+                It allows users to add new books, edit book details, delete books, and update their list seamlessly. 
+                Built using React Native, the app delivers a smooth and responsive user experience, with intuitive navigation and functionality tailored for book enthusiasts. 
+                Above is a demonstration video of the app, where the features are showcased.
+                <br />
+                <a class="link" href="https://github.com/sixphor/L6-Book-App-UPDATED">GitHub Repository</a>
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay4" onclick="offOverlay4()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay4()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <iframe width="100%" height="315" src="https://youtube.com/embed/LWm3kNXI8tg" loading="lazy"></iframe>
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            This app enables users to effortlessly manage their finances by inputting both their spendings and gains. 
+                The app provides a clear summary, showcasing the current deficit or surplus, allowing users to track their financial health at a glance. 
+                Developed using React Native, the app offers a user-friendly interface with smooth navigation. 
+                Above is a demonstration video of its features.
+                <br />
+                <a class="link" href="https://github.com/sixphor/L7ExpenseIncomeManager">GitHub Repository</a>
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay5" onclick="offOverlay5()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay5()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <a href="#" class="image featured"><img src="images/react-travel.jpg" alt="app2" loading="lazy" /></a>
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            Using React, I created a travel list app. 
+                This app created using the JSX. This app displays a pizza menu with various detais such as price amnd ingredients.
+             There is also a feature based on the real-time. When it is in a certain time range, the app will be in a different display to show open or closed.
+             <br />
+             <a class="link" href="https://travel-list-app-sable.vercel.app/">Visit the site</a>
+             <br />
+             <a class="link" href="https://github.com/sixphor/travel-list-app">GitHub Repository</a>
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay6" onclick="offOverlay6()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay6()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <a href="#" class="image featured"><img src="images/react-backend.jpg" alt="app2" loading="lazy"/></a>
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            <p>This project is a full-stack workout tracking web application, developed using the MERN stack (MongoDB, Express.js, React, Node.js). 
+                The app allows users to create personalized workout routines, track progress, and log their exercises with details such as sets, reps, and weight.
+                <br>
+                <br>
+                On the frontend, I implemented React for building a responsive and dynamic user interface, 
+                providing users with smooth navigation and interactive features like workout timers and exercise history tracking. 
+                The design focuses on simplicity and functionality, allowing users to easily create, edit, and view their workout plans.
+                <br>
+                <br>
+                On the backend, I used Node.js and Express to handle user authentication, session management, and data storage. 
+                MongoDB was utilized as the database to store user profiles, workout logs, and performance metrics. 
+                The backend supports secure operations, with JWT-based authentication to protect user data.
+                <br>
+                <a class="link" href="https://mern-workout-app-frontend-3yfy.onrender.com">Workout App</a> <br>
+                <a class="link" href="https://github.com/sixphor/mern-workout-app">GitHub Repo</a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay7" onclick="offOverlay7()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay7()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <iframe width="100%" height="315" src="https://youtube.com/embed/Kar_osOQqrI" loading="lazy"></iframe>
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            <p>This project is a high-fidelity wireframe design for a book app, 
+                showcasing a clean and intuitive user interface. 
+                The app allows users to browse and manage books effortlessly, 
+                with features such as book categorization, a personalized book list, and detailed book information pages. 
+                I designed the app with a focus on user experience, ensuring smooth navigation and a visually appealing layout. 
+                The color scheme combines soft neutrals with vibrant highlights to create a balanced and engaging aesthetic. 
+                Every design element was chosen with attention to accessibility and readability, making the app usable for a wide range of readers. 
+                This wireframe demonstrates my ability to translate user needs into functional, appealing, and well-structured app designs.
+                <br />
+                <a class="link" href="https://www.figma.com/proto/jtLcefAPjyX4yWVewCVgn5/Literae-High-fidelity-Wireframe?node-id=2021-119&t=oQBKi6oEFFh4DBNf-1">Figma Prototype</a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay8" onclick="offOverlay8()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay8()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <a href="#" class="image featured"><img src="images/styleshop-design.png" alt="styleshop design" loading="lazy"/></a>
+
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            <p>This project is a high-fidelity wireframe design for a e-commerce app, 
+                showcasing a clean and friendly user interface. 
+                I created a detailed high-fidelity wireframe for a shopping app using Figma, designed to provide an intuitive and visually appealing user experience. 
+                The wireframe includes screens, from product browsing and selection to checkout, with a clean layout and user-friendly flow. 
+                The design focuses on usability, highlighting key actions and ensuring smooth navigation.
+                <br />
+                <a class="link" href="https://www.figma.com/proto/InDiXhJ5bvjztZxx2LqZSN/StyleShop-UI-Kit?node-id=20-173&starting-point-node-id=20%3A173&t=qNjefelYGqhr8Dvi-1">Figma Prototype</a> 
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div id="overlay9" onclick="offOverlay9()">
+        <div id="inside-overlay" onclick="event.stopPropagation()">
+          <!-- Close Button -->
+          <span class="close-button" onclick="offOverlay9()">×</span>
+      
+          <!-- Media Container for Multiple Videos and Images -->
+          <div class="media-container">
+            <!-- Video 1 -->
+            <div class="media-item">
+                
+                <a href="#" class="image featured"><img src="images/design-work.jpg" alt="design1" loading="lazy"/></a>
+
+                
+            </div>
+      
+           
+            <!-- <div class="media-item">
+              <img src="/images/vr-room.png" alt="VR Room" loading="lazy" />
+            </div>
+      
+           
+            <div class="media-item">
+                <img src="/images/vr-room2.png" alt="Another VR Room" loading="lazy" />
+              </div>
+      
+            
+            <div class="media-item">
+              <img src="/images/vr-room3.png" alt="Another VR Room" loading="lazy" />
+            </div> -->
+          </div>
+      
+          <!-- Work Description -->
+          <div id="workdesc">
+            <p>Using Adobe Illustrator, I created some avatar designs.
+                These designs were created from scratch and they are variants of the same avatar, with different hair, clothes, expressions and more.
+                I used a variety of tools to create this design and learnt a lot of use techniques along the way.
+                Each body part was made on its own before then combining them to form a human character.
+            </p>
+          </div>
+        </div>
+    </div>
+    
+
     <div id="page-wrapper">
 
         <!-- Header -->
@@ -17,12 +432,12 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="scrolly">About</a></li>
-                    <li>
-                        <a href="/portfolio.html" class="onpage">Portfolio</a>
+                    <li class="onpage">
+                        <a href="/portfolio.html">Portfolio</a>
                         <ul>
-                            <li><a href="#vrunitything">VR Applications</a></li>
+                            <!-- <li><a href="#vrunitything">VR Applications</a></li> -->
                             <li><a href="#designthing">Design</a></li>
-                            <li><a href="#webappthing">Software Web Applications</a></li>
+                            <li><a href="#webappthing">Development</a></li>
                         </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
@@ -39,48 +454,7 @@
                         <h2><a href="#">PORTFOLIO!</a></h2>
                         <p>Some of my works in both development and design!</p>
                     </header>
-                    <!-- AR/VR Applications -->
-                    <div>
-                        <h3 id="vrunitything">AR/VR Applications</h3>
-                    </div>
-                    <div class="portfolio-grid zoom-in">
-                        <div class="portfolio-item">
-                            <header>
-                                <h3>VR Escape Room: "Your Heart, Your Reality"</h3>
-                            </header>
-                            <section>
-                                <a href="#" class="image featured">
-                                    <!-- <video width="100%" muted controls>
-                                        <source src="https://youtu.be/8SxTT9PuMh8" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video> -->
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/8SxTT9PuMh8" loading="lazy"></iframe>
-                                </a>
-                                <p>Using Unity, I created my escape room game "Your Heart, Your Reality". In this game, the player must solve puzzles in order to escape the rooms and complete the game.
-                                     The game was created using the Unity engine, creating elements and objects and placing them in the scene to form an environment.
-                                      In this project, C# was used to create the game's features such as opening the doors, picking up objects, clicking buttons.
-                                </p>
-                            </section>
-                        </div>
-
-                        <!-- <div class="portfolio-item">
-                            <header>
-                                <h3>VR Escape Room: Placeholder</h3>
-                            </header>
-                            <section>
-                                <a href="#" class="image featured" id="vrunitything">
-                                    <video width="100%" muted controls>
-                                        <source src="/images/escaperoom.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </a>
-                                <p>Placeholder for future portfolio works.</p>
-                            </section>
-                        </div> -->
-
-                        
-
-                    </div>
+                    
                     <hr />
                     <!-- Web Applications -->
                     <div>
@@ -88,142 +462,72 @@
                     </div>
                     <div class="portfolio-grid zoom-in">
                        
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" onclick="onOverlay2()">
                             <header>
                                 <h3>Storytelling Web App: "No Book, No Life"</h3>
                             </header>
                             <section>
-                                <!-- <a href="#" class="image featured"><img src="images/web-app.png" alt="app1" /></a> -->
-                                <div class="slideshow-container">
-                                    <div class="mySlides1 fade">
-                                        <div class="numbertext">1 / 5</div>
-                                        <img src="images/web-app.png" style="width:100%">
-                                    </div>
-                                    
-                                    <div class="mySlides1 fade">
-                                        <div class="numbertext">2 / 5</div>
-                                        <img src="images/storyapp2.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides1 fade">
-                                        <div class="numbertext">3 / 5</div>
-                                        <img src="images/storyapp3.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides1 fade">
-                                        <div class="numbertext">4 / 5</div>
-                                        <img src="images/storyapp4.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides1 fade">
-                                        <div class="numbertext">5 / 5</div>
-                                        <img src="images/storyapp5.jpg" style="width:100%">
-                                    </div>
-
-                                    <!-- Next and previous buttons -->
-                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                                </div>
-                                <br>
-                                <!-- The dots/circles -->
-                                <div style="text-align:center">
-                                    <span class="dot" onclick="currentSlide(1)"></span>
-                                    <span class="dot" onclick="currentSlide(2)"></span>
-                                    <span class="dot" onclick="currentSlide(3)"></span>
-                                    <span class="dot" onclick="currentSlide(4)"></span>
-                                    <span class="dot" onclick="currentSlide(5)"></span>
-                                </div>
-                                <p>Using a combination of Node.js, PHP and MySQL, I created a storybook app, "No Book, No Life".
-                                     This application allows people to create a user with a name, profile picture and description. 
-                                     It also allows the main part, creating books, with a title, author, book cover, and synopsis.
-                                      The book list and user list will be updated accordingly when one is created or deleted.
-                                     Throughout the creation of the app, I discovered how to implement multiple features and how to link to a local database, where all the book and user information are stored.
-                                      
-                                </p>
+                                <img src="images/web-app.png" alt="app2" loading="lazy" />
                             </section>
                         </div>
 
-                       
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" onclick="on()">
                             <header>
-                                <h3>React App: Pizza Shop</h3>
+                                <h3>VR Escape Room: "Your Heart, Your Reality"</h3>
                             </header>
                             <section>
-                                <a href="#" class="image featured"><img src="images/pizzaapp1.jpg" alt="app2" loading="lazy" /></a>
-                                <p>Using React, I created a pizza ordering app. 
-                                    This app created using the JSX. This app displays a pizza menu with various detais such as price amnd ingredients.
-                                     There is also a feature based on the real-time. When it is in a certain time range, the app will be in a different display to show open or closed.
-                                </p>
+                                
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/8SxTT9PuMh8" loading="lazy"></iframe>
+                                
                             </section>
                         </div>
 
-                        <div class="portfolio-item">
-                            <header>
-                                <h3>React App: Travel App</h3>
-                            </header>
-                            <section>
-                                <a href="#" class="image featured"><img src="images/react-travel.jpg" alt="app2" loading="lazy" /></a>
-                                <p>Using React, I created a pizza ordering app. 
-                                    This app created using the JSX. This app displays a pizza menu with various detais such as price amnd ingredients.
-                                     There is also a feature based on the real-time. When it is in a certain time range, the app will be in a different display to show open or closed.
-                                </p>
-                            </section>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <header>
-                                <h3>React App: Workout App</h3>
-                            </header>
-                            <section>
-                                <a href="#" class="image featured"><img src="images/react-backend.jpg" alt="app2" loading="lazy"/></a>
-                                <p>This project is a full-stack workout tracking web application, developed using the MERN stack (MongoDB, Express.js, React, Node.js). 
-                                    The app allows users to create personalized workout routines, track progress, and log their exercises with details such as sets, reps, and weight.
-                                    <br>
-                                    <br>
-                                    On the frontend, I implemented React for building a responsive and dynamic user interface, 
-                                    providing users with smooth navigation and interactive features like workout timers and exercise history tracking. 
-                                    The design focuses on simplicity and functionality, allowing users to easily create, edit, and view their workout plans.
-                                    <br>
-                                    <br>
-                                    On the backend, I used Node.js and Express to handle user authentication, session management, and data storage. 
-                                    MongoDB was utilized as the database to store user profiles, workout logs, and performance metrics. 
-                                    The backend supports secure operations, with JWT-based authentication to protect user data.
-                                </p>
-                            </section>
-                        </div>
-
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" onclick="onOverlay3()">
                             <header>
                                 <h3>Ultimate Book List App</h3>
                             </header>
                             <section>
-                                <a href="#" class="image featured">
-                                    <iframe width="100%" height="315" src="https://youtube.com/embed/32STyDGg3xk" loading="lazy"></iframe>
-                                </a>
-                                <p>This app is designed to help users manage their personal book collections. 
+                                
+                                <iframe width="100%" height="315" src="https://youtube.com/embed/32STyDGg3xk" loading="lazy"></iframe>
+                                
+                                <!-- <p>This app is designed to help users manage their personal book collections. 
                                     It allows users to add new books, edit book details, delete books, and update their list seamlessly. 
                                     Built using React Native, the app delivers a smooth and responsive user experience, with intuitive navigation and functionality tailored for book enthusiasts. 
                                     Above is a demonstration video of the app, where the features are showcased.
-                                </p>
+                                </p> -->
                             </section>
                         </div>
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" onclick="onOverlay4()">
                             <header>
                                 <h3>Income and Expense Tracker App</h3>
                             </header>
                             <section>
-                                <a href="#" class="image featured">
-                                    <iframe width="100%" height="315" src="https://youtube.com/embed/LWm3kNXI8tg" loading="lazy"></iframe>
-                                </a>
-                                <p>This app enables users to effortlessly manage their finances by inputting both their spendings and gains. 
-                                    The app provides a clear summary, showcasing the current deficit or surplus, allowing users to track their financial health at a glance. 
-                                    Developed using React Native, the app offers a user-friendly interface with smooth navigation. 
-                                    Above is a demonstration video of its features.
-                                </p>
+                                
+                                <iframe width="100%" height="315" src="https://youtube.com/embed/LWm3kNXI8tg" loading="lazy"></iframe>
+                               
+                            
                             </section>
                         </div>
 
+                          
+                        <div class="portfolio-item" onclick="onOverlay5()">
+                            <header>
+                                <h3>React App: Travel App</h3>
+                            </header>
+                            <section>
+                                <img src="images/react-travel.jpg" alt="app2" loading="lazy" />
+                            </section>
+                        </div>
+
+                        <div class="portfolio-item" onclick="onOverlay6()">
+                            <header>
+                                <h3>React App: Workout App</h3>
+                            </header>
+                            <section>
+                                <img src="images/react-backend.jpg" alt="app2" loading="lazy"/>
+                            </section>
+                        </div>
 
                     </div>
                     <hr />
@@ -231,51 +535,34 @@
                     <div>
                         <h3 id="designthing">Design</h3>
                     </div>
-                    <div class="portfolio-grid">
+                    <div class="portfolio-grid zoom-in">
                        
-                        <div class="portfolio-item">
-                            <header>
-                                <h3>Avatar creations</h3>
-                            </header>
-                            <section>
-                                <a href="#" class="image featured"><img src="images/design-work.jpg" alt="design1" loading="lazy"/></a>
-                                <p>Using Adobe Illustrator, I created some avatar designs.
-                                     These designs were created from scratch and they are variants of the same avatar, with different hair, clothes, expressions and more.
-                                     I used a variety of tools to create this design and learnt a lot of use techniques along the way.
-                                     Each body part was made on its own before then combining them to form a human character.</p>
-                            </section>
-                        </div>
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" onclick="onOverlay7()">
                             <header>
                                 <h3>Literae: Interactive Book App</h3>
                             </header>
                             <section>
-                                <a href="#" class="image featured">
-                                    <iframe width="100%" height="315" src="https://youtube.com/embed/Kar_osOQqrI" loading="lazy"></iframe>
-                                </a>
-                                <p>This project is a high-fidelity wireframe design for a book app, 
-                                    showcasing a clean and intuitive user interface. 
-                                    The app allows users to browse and manage books effortlessly, 
-                                    with features such as book categorization, a personalized book list, and detailed book information pages. 
-                                    I designed the app with a focus on user experience, ensuring smooth navigation and a visually appealing layout. 
-                                    The color scheme combines soft neutrals with vibrant highlights to create a balanced and engaging aesthetic. 
-                                    Every design element was chosen with attention to accessibility and readability, making the app usable for a wide range of readers. 
-                                    This wireframe demonstrates my ability to translate user needs into functional, appealing, and well-structured app designs.</p>
+                                
+                                <iframe width="100%" height="315" src="https://youtube.com/embed/Kar_osOQqrI" loading="lazy"></iframe>
+                                
                             </section>
                         </div>
 
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" onclick="onOverlay8()">
                             <header>
                                 <h3>StyleShop: Shopping App</h3>
                             </header>
                             <section>
-                                <a href="#" class="image featured"><img src="images/styleshop-design.png" alt="styleshop design" loading="lazy"/></a>
-                                <p>This project is a high-fidelity wireframe design for a e-commerce app, 
-                                    showcasing a clean and friendly user interface. 
-                                    I created a detailed high-fidelity wireframe for a shopping app using Figma, designed to provide an intuitive and visually appealing user experience. 
-                                    The wireframe includes screens, from product browsing and selection to checkout, with a clean layout and user-friendly flow. 
-                                    The design focuses on usability, highlighting key actions and ensuring smooth navigation. 
-                                </p>
+                                <img src="images/styleshop-design.png" alt="styleshop design" loading="lazy"/>
+                            </section>
+                        </div>
+
+                        <div class="portfolio-item" onclick="onOverlay9()">
+                            <header>
+                                <h3>Avatar creations</h3>
+                            </header>
+                            <section>
+                                <img src="images/design-work.jpg" alt="design1" loading="lazy"/>
                             </section>
                         </div>
 

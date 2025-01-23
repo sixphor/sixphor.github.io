@@ -1386,7 +1386,7 @@ body.homepage.is-preload #header:after {
 /* Portfolio Grid Layout */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 2em; /* Adjust space between items */
     margin-top: 2em;
 }
@@ -1397,6 +1397,14 @@ body.homepage.is-preload #header:after {
     padding: 1.5em;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+	background: linear-gradient(135deg, rgba(252, 214, 78, 0.863), rgba(255, 241, 193, 0.9));
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	cursor: pointer; 
 }
 
 .portfolio-item img, .portfolio-item video {
@@ -1640,6 +1648,259 @@ body.homepage.is-preload #header:after {
 .interests-font {
 	size: 16px;
 }
+
+/* .overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1000;
+  }
+  
+  .overlay-content {
+	position: relative;
+	width: 80%;
+	margin: 5% auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+  }
+  
+  .overlay h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .overlay p {
+	font-size: 16px;
+	margin-bottom: 20px;
+  }
+  
+  .close-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 30px;
+	cursor: pointer;
+  } */
+
+/* #overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 2;
+}
+
+#inside-overlay {
+	
+	position: absolute;
+	width: 70%;
+	height: 70%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 241, 193, 0.98);
+	z-index: 2;
+	border-radius: 25px;
+	transform: translate(20%, 20%);
+	text-align: center;
+	overflow: auto;
+}
+
+
+#text {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#workdesc {
+	font-size: 24px;
+} */
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+	
+}
+
+#overlay3 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay4 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay5 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay6 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay7 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#overlay8 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+	
+}
+
+#overlay9 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#inside-overlay {
+    position: absolute;
+    /* width: 80%;
+    max-width: 1000px;
+    height: 80%; */
+	width: 90%; /* Increase width to 90% of the screen */
+    max-width: 1200px; /* You can increase the max-width */
+    height: 90%; /* Increase height to 90% of the screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(255, 241, 193, 0.98); */
+	background: linear-gradient(135deg, rgba(255, 223, 109, 0.99), rgba(255, 241, 193, 0.99));
+    border-radius: 25px;
+    overflow-y: auto;
+    padding: 20px;
+	padding-top: 50px;
+    z-index: 2;
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
+}
+
+/* Responsive Media Container */
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.media-item {
+    flex: 1 1 45%; /* Items take 45% of container width, wrapping into new rows */
+    max-width: 45%;
+}
+
+
+ /* Force consistent height for both iframe (YouTube video) and image */
+.media-item iframe,
+.media-item img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fit nicely within the container */
+    border-radius: 10px;
+}
+
+
+#text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#workdesc {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.link {
+	color: blue;
+}
+
+
 
 
 
