@@ -1884,7 +1884,7 @@ body.homepage.is-preload #header:after {
 #workdesc {
     font-size: 18px;
     margin-top: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* Close Button */
@@ -1898,6 +1898,11 @@ body.homepage.is-preload #header:after {
 
 .link {
 	color: blue;
+}
+
+.resumedl {
+	color: blue;
+	font-size: 24px;
 }
 
 
